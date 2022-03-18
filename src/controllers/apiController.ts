@@ -28,7 +28,7 @@ export const createPhrase = async (req: Request, res: Response) => {
 export const listPhrases = async (req: Request, res: Response) => {
     let list = await Phrase.findAll();
 
-    res.json(list);
+    res.json({list});
 }
 
 export const getPhrase = async (req: Request, res: Response) => {
